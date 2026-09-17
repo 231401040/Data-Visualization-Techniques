@@ -1,0 +1,1847 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20261.26.0410.0924                               -->
+<workbook original-version='18.1' source-build='2026.1.1 (20261.26.0410.0924)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='loans (financeDB)' inline='true' name='federated.1dgou951bg2xpf16hyir91c8q8c2' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='localhost' name='sqlserver.0rqdf310snw5v912k5md303aarrq'>
+            <connection application-intent='false' authentication='sspi' class='sqlserver' dbname='financeDB' multi-subnet-failover='false' odbc-native-protocol='yes' one-time-sql='' server='localhost' sslmode='require' />
+          </named-connection>
+        </named-connections>
+        <relation connection='sqlserver.0rqdf310snw5v912k5md303aarrq' name='loans' table='[dbo].[loans]' type='table' />
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>LoanID</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[LoanID]</local-name>
+            <parent-name>[loans]</parent-name>
+            <remote-alias>LoanID</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>50</width>
+            <contains-null>false</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[loans_20E7474472E44ADEAD44E8924A22F51C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Age</remote-name>
+            <remote-type>17</remote-type>
+            <local-name>[Age]</local-name>
+            <parent-name>[loans]</parent-name>
+            <remote-alias>Age</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>3</precision>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_TINYINT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_UTINYINT&quot;</attribute>
+            </attributes>
+            <object-id>[loans_20E7474472E44ADEAD44E8924A22F51C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Income</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[Income]</local-name>
+            <parent-name>[loans]</parent-name>
+            <remote-alias>Income</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <object-id>[loans_20E7474472E44ADEAD44E8924A22F51C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LoanAmount</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[LoanAmount]</local-name>
+            <parent-name>[loans]</parent-name>
+            <remote-alias>LoanAmount</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <object-id>[loans_20E7474472E44ADEAD44E8924A22F51C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CreditScore</remote-name>
+            <remote-type>2</remote-type>
+            <local-name>[CreditScore]</local-name>
+            <parent-name>[loans]</parent-name>
+            <remote-alias>CreditScore</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>5</precision>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_SMALLINT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SSHORT&quot;</attribute>
+            </attributes>
+            <object-id>[loans_20E7474472E44ADEAD44E8924A22F51C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MonthsEmployed</remote-name>
+            <remote-type>17</remote-type>
+            <local-name>[MonthsEmployed]</local-name>
+            <parent-name>[loans]</parent-name>
+            <remote-alias>MonthsEmployed</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>3</precision>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_TINYINT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_UTINYINT&quot;</attribute>
+            </attributes>
+            <object-id>[loans_20E7474472E44ADEAD44E8924A22F51C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NumCreditLines</remote-name>
+            <remote-type>17</remote-type>
+            <local-name>[NumCreditLines]</local-name>
+            <parent-name>[loans]</parent-name>
+            <remote-alias>NumCreditLines</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>3</precision>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_TINYINT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_UTINYINT&quot;</attribute>
+            </attributes>
+            <object-id>[loans_20E7474472E44ADEAD44E8924A22F51C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>InterestRate</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[InterestRate]</local-name>
+            <parent-name>[loans]</parent-name>
+            <remote-alias>InterestRate</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_FLOAT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+            <object-id>[loans_20E7474472E44ADEAD44E8924A22F51C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LoanTerm</remote-name>
+            <remote-type>17</remote-type>
+            <local-name>[LoanTerm]</local-name>
+            <parent-name>[loans]</parent-name>
+            <remote-alias>LoanTerm</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>3</precision>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_TINYINT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_UTINYINT&quot;</attribute>
+            </attributes>
+            <object-id>[loans_20E7474472E44ADEAD44E8924A22F51C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DTIRatio</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[DTIRatio]</local-name>
+            <parent-name>[loans]</parent-name>
+            <remote-alias>DTIRatio</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_FLOAT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+            <object-id>[loans_20E7474472E44ADEAD44E8924A22F51C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Education</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Education]</local-name>
+            <parent-name>[loans]</parent-name>
+            <remote-alias>Education</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>50</width>
+            <contains-null>false</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[loans_20E7474472E44ADEAD44E8924A22F51C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>EmploymentType</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[EmploymentType]</local-name>
+            <parent-name>[loans]</parent-name>
+            <remote-alias>EmploymentType</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>50</width>
+            <contains-null>false</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[loans_20E7474472E44ADEAD44E8924A22F51C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MaritalStatus</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[MaritalStatus]</local-name>
+            <parent-name>[loans]</parent-name>
+            <remote-alias>MaritalStatus</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>50</width>
+            <contains-null>false</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[loans_20E7474472E44ADEAD44E8924A22F51C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>HasMortgage</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[HasMortgage]</local-name>
+            <parent-name>[loans]</parent-name>
+            <remote-alias>HasMortgage</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>50</width>
+            <contains-null>false</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[loans_20E7474472E44ADEAD44E8924A22F51C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>HasDependents</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[HasDependents]</local-name>
+            <parent-name>[loans]</parent-name>
+            <remote-alias>HasDependents</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>50</width>
+            <contains-null>false</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[loans_20E7474472E44ADEAD44E8924A22F51C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LoanPurpose</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[LoanPurpose]</local-name>
+            <parent-name>[loans]</parent-name>
+            <remote-alias>LoanPurpose</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>50</width>
+            <contains-null>false</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[loans_20E7474472E44ADEAD44E8924A22F51C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>HasCoSigner</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[HasCoSigner]</local-name>
+            <parent-name>[loans]</parent-name>
+            <remote-alias>HasCoSigner</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>50</width>
+            <contains-null>false</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[loans_20E7474472E44ADEAD44E8924A22F51C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DefaultFlag</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[DefaultFlag]</local-name>
+            <parent-name>[loans]</parent-name>
+            <remote-alias>DefaultFlag</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <object-id>[loans_20E7474472E44ADEAD44E8924A22F51C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AgeGroup</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[AgeGroup]</local-name>
+            <parent-name>[loans]</parent-name>
+            <remote-alias>AgeGroup</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>50</width>
+            <contains-null>false</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[loans_20E7474472E44ADEAD44E8924A22F51C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>IncomeBand</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[IncomeBand]</local-name>
+            <parent-name>[loans]</parent-name>
+            <remote-alias>IncomeBand</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>50</width>
+            <contains-null>false</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[loans_20E7474472E44ADEAD44E8924A22F51C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CreditBand</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[CreditBand]</local-name>
+            <parent-name>[loans]</parent-name>
+            <remote-alias>CreditBand</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>50</width>
+            <contains-null>false</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[loans_20E7474472E44ADEAD44E8924A22F51C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DTIBand</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[DTIBand]</local-name>
+            <parent-name>[loans]</parent-name>
+            <remote-alias>DTIBand</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>50</width>
+            <contains-null>false</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[loans_20E7474472E44ADEAD44E8924A22F51C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>RateBand</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[RateBand]</local-name>
+            <parent-name>[loans]</parent-name>
+            <remote-alias>RateBand</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>50</width>
+            <contains-null>false</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[loans_20E7474472E44ADEAD44E8924A22F51C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LoanToIncome</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[LoanToIncome]</local-name>
+            <parent-name>[loans]</parent-name>
+            <remote-alias>LoanToIncome</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_FLOAT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+            <object-id>[loans_20E7474472E44ADEAD44E8924A22F51C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LTIBand</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[LTIBand]</local-name>
+            <parent-name>[loans]</parent-name>
+            <remote-alias>LTIBand</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>50</width>
+            <contains-null>false</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[loans_20E7474472E44ADEAD44E8924A22F51C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MonthlyPayment</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[MonthlyPayment]</local-name>
+            <parent-name>[loans]</parent-name>
+            <remote-alias>MonthlyPayment</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_FLOAT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+            <object-id>[loans_20E7474472E44ADEAD44E8924A22F51C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PaymentToIncomePct</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[PaymentToIncomePct]</local-name>
+            <parent-name>[loans]</parent-name>
+            <remote-alias>PaymentToIncomePct</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_FLOAT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+            <object-id>[loans_20E7474472E44ADEAD44E8924A22F51C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DefaultStatus</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[DefaultStatus]</local-name>
+            <parent-name>[loans]</parent-name>
+            <remote-alias>DefaultStatus</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>50</width>
+            <contains-null>false</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[loans_20E7474472E44ADEAD44E8924A22F51C]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Age Group' datatype='string' name='[AgeGroup]' role='dimension' type='nominal' />
+      <column caption='Default Rate' datatype='real' default-format='p0.00%' name='[Calculation_0997577310863360]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='AVG([DefaultFlag])' />
+      </column>
+      <column caption='Credit Band' datatype='string' name='[CreditBand]' role='dimension' type='nominal' />
+      <column caption='Credit Score' datatype='integer' name='[CreditScore]' role='measure' type='quantitative' />
+      <column caption='DTI Band' datatype='string' name='[DTIBand]' role='dimension' type='nominal' />
+      <column caption='DTI Ratio' datatype='real' name='[DTIRatio]' role='measure' type='quantitative' />
+      <column caption='Default Flag' datatype='integer' name='[DefaultFlag]' role='measure' type='quantitative' />
+      <column caption='Default Status' datatype='string' name='[DefaultStatus]' role='dimension' type='nominal' />
+      <column caption='Employment Type' datatype='string' name='[EmploymentType]' role='dimension' type='nominal' />
+      <column caption='Has Co Signer' datatype='string' name='[HasCoSigner]' role='dimension' type='nominal' />
+      <column caption='Has Dependents' datatype='string' name='[HasDependents]' role='dimension' type='nominal' />
+      <column caption='Has Mortgage' datatype='string' name='[HasMortgage]' role='dimension' type='nominal' />
+      <column caption='Income Band' datatype='string' name='[IncomeBand]' role='dimension' type='nominal' />
+      <column caption='Interest Rate' datatype='real' name='[InterestRate]' role='measure' type='quantitative' />
+      <column caption='LTI Band' datatype='string' name='[LTIBand]' role='dimension' type='nominal' />
+      <column caption='Loan Amount' datatype='integer' name='[LoanAmount]' role='measure' type='quantitative' />
+      <column caption='Loan ID' datatype='string' name='[LoanID]' role='dimension' type='nominal' />
+      <column caption='Loan Purpose' datatype='string' name='[LoanPurpose]' role='dimension' type='nominal' />
+      <column caption='Loan Term' datatype='integer' name='[LoanTerm]' role='measure' type='quantitative' />
+      <column caption='Loan To Income' datatype='real' name='[LoanToIncome]' role='measure' type='quantitative' />
+      <column caption='Marital Status' datatype='string' name='[MaritalStatus]' role='dimension' type='nominal' />
+      <column caption='Monthly Payment' datatype='real' name='[MonthlyPayment]' role='measure' type='quantitative' />
+      <column caption='Months Employed' datatype='integer' name='[MonthsEmployed]' role='measure' type='quantitative' />
+      <column caption='Num Credit Lines' datatype='integer' name='[NumCreditLines]' role='measure' type='quantitative' />
+      <column caption='Payment To Income Pct' datatype='real' name='[PaymentToIncomePct]' role='measure' type='quantitative' />
+      <column caption='Rate Band' datatype='string' name='[RateBand]' role='dimension' type='nominal' />
+      <column caption='loans' datatype='table' name='[__tableau_internal_object_id__].[loans_20E7474472E44ADEAD44E8924A22F51C]' role='measure' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_GB' class='hyper' dbname='C:/Users/isaac/OneDrive/Documents/My Tableau Repository/Data sources/loans (financeDB).hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='09/15/2026 09:41:12 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <refresh>
+            <refresh-event add-from-file-path='loans (financeDB)' increment-value='%null%' refresh-type='create' rows-inserted='255347' timestamp-start='2026-09-15 09:41:10.206' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>LoanID</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[LoanID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>LoanID</remote-alias>
+              <ordinal>0</ordinal>
+              <family>loans</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>255347</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[loans_20E7474472E44ADEAD44E8924A22F51C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Age</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Age]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Age</remote-alias>
+              <ordinal>1</ordinal>
+              <family>loans</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>52</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[loans_20E7474472E44ADEAD44E8924A22F51C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Income</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Income]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Income</remote-alias>
+              <ordinal>2</ordinal>
+              <family>loans</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>201425</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[loans_20E7474472E44ADEAD44E8924A22F51C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>LoanAmount</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[LoanAmount]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>LoanAmount</remote-alias>
+              <ordinal>3</ordinal>
+              <family>loans</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>212212</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[loans_20E7474472E44ADEAD44E8924A22F51C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>CreditScore</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[CreditScore]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>CreditScore</remote-alias>
+              <ordinal>4</ordinal>
+              <family>loans</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2061</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[loans_20E7474472E44ADEAD44E8924A22F51C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>MonthsEmployed</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[MonthsEmployed]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>MonthsEmployed</remote-alias>
+              <ordinal>5</ordinal>
+              <family>loans</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>120</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[loans_20E7474472E44ADEAD44E8924A22F51C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>NumCreditLines</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[NumCreditLines]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>NumCreditLines</remote-alias>
+              <ordinal>6</ordinal>
+              <family>loans</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[loans_20E7474472E44ADEAD44E8924A22F51C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>InterestRate</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[InterestRate]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>InterestRate</remote-alias>
+              <ordinal>7</ordinal>
+              <family>loans</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>14204</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[loans_20E7474472E44ADEAD44E8924A22F51C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>LoanTerm</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[LoanTerm]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>LoanTerm</remote-alias>
+              <ordinal>8</ordinal>
+              <family>loans</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[loans_20E7474472E44ADEAD44E8924A22F51C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>DTIRatio</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[DTIRatio]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>DTIRatio</remote-alias>
+              <ordinal>9</ordinal>
+              <family>loans</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>81</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[loans_20E7474472E44ADEAD44E8924A22F51C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Education</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Education]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Education</remote-alias>
+              <ordinal>10</ordinal>
+              <family>loans</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[loans_20E7474472E44ADEAD44E8924A22F51C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>EmploymentType</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[EmploymentType]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>EmploymentType</remote-alias>
+              <ordinal>11</ordinal>
+              <family>loans</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[loans_20E7474472E44ADEAD44E8924A22F51C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>MaritalStatus</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[MaritalStatus]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>MaritalStatus</remote-alias>
+              <ordinal>12</ordinal>
+              <family>loans</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[loans_20E7474472E44ADEAD44E8924A22F51C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>HasMortgage</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[HasMortgage]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>HasMortgage</remote-alias>
+              <ordinal>13</ordinal>
+              <family>loans</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[loans_20E7474472E44ADEAD44E8924A22F51C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>HasDependents</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[HasDependents]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>HasDependents</remote-alias>
+              <ordinal>14</ordinal>
+              <family>loans</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[loans_20E7474472E44ADEAD44E8924A22F51C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>LoanPurpose</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[LoanPurpose]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>LoanPurpose</remote-alias>
+              <ordinal>15</ordinal>
+              <family>loans</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[loans_20E7474472E44ADEAD44E8924A22F51C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>HasCoSigner</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[HasCoSigner]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>HasCoSigner</remote-alias>
+              <ordinal>16</ordinal>
+              <family>loans</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[loans_20E7474472E44ADEAD44E8924A22F51C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>DefaultFlag</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[DefaultFlag]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>DefaultFlag</remote-alias>
+              <ordinal>17</ordinal>
+              <family>loans</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[loans_20E7474472E44ADEAD44E8924A22F51C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>AgeGroup</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[AgeGroup]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>AgeGroup</remote-alias>
+              <ordinal>18</ordinal>
+              <family>loans</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[loans_20E7474472E44ADEAD44E8924A22F51C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>IncomeBand</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[IncomeBand]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>IncomeBand</remote-alias>
+              <ordinal>19</ordinal>
+              <family>loans</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[loans_20E7474472E44ADEAD44E8924A22F51C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>CreditBand</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[CreditBand]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>CreditBand</remote-alias>
+              <ordinal>20</ordinal>
+              <family>loans</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[loans_20E7474472E44ADEAD44E8924A22F51C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>DTIBand</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[DTIBand]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>DTIBand</remote-alias>
+              <ordinal>21</ordinal>
+              <family>loans</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[loans_20E7474472E44ADEAD44E8924A22F51C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>RateBand</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[RateBand]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>RateBand</remote-alias>
+              <ordinal>22</ordinal>
+              <family>loans</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[loans_20E7474472E44ADEAD44E8924A22F51C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>LoanToIncome</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[LoanToIncome]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>LoanToIncome</remote-alias>
+              <ordinal>23</ordinal>
+              <family>loans</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>24614</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[loans_20E7474472E44ADEAD44E8924A22F51C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>LTIBand</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[LTIBand]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>LTIBand</remote-alias>
+              <ordinal>24</ordinal>
+              <family>loans</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[loans_20E7474472E44ADEAD44E8924A22F51C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>MonthlyPayment</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[MonthlyPayment]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>MonthlyPayment</remote-alias>
+              <ordinal>25</ordinal>
+              <family>loans</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>255347</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[loans_20E7474472E44ADEAD44E8924A22F51C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>PaymentToIncomePct</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[PaymentToIncomePct]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>PaymentToIncomePct</remote-alias>
+              <ordinal>26</ordinal>
+              <family>loans</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>67177</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[loans_20E7474472E44ADEAD44E8924A22F51C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>DefaultStatus</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[DefaultStatus]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>DefaultStatus</remote-alias>
+              <ordinal>27</ordinal>
+              <family>loans</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[loans_20E7474472E44ADEAD44E8924A22F51C]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='loans' id='loans_20E7474472E44ADEAD44E8924A22F51C'>
+            <properties context=''>
+              <relation connection='sqlserver.0rqdf310snw5v912k5md303aarrq' name='loans' table='[dbo].[loans]' type='table' />
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <shared-views>
+    <shared-view name='federated.1dgou951bg2xpf16hyir91c8q8c2'>
+      <datasources>
+        <datasource caption='loans (financeDB)' name='federated.1dgou951bg2xpf16hyir91c8q8c2' />
+      </datasources>
+      <datasource-dependencies datasource='federated.1dgou951bg2xpf16hyir91c8q8c2'>
+        <column caption='Employment Type' datatype='string' name='[EmploymentType]' role='dimension' type='nominal' />
+        <column-instance column='[EmploymentType]' derivation='None' name='[none:EmploymentType:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <filter class='categorical' column='[federated.1dgou951bg2xpf16hyir91c8q8c2].[none:EmploymentType:nk]'>
+        <groupfilter function='level-members' level='[none:EmploymentType:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+      </filter>
+    </shared-view>
+  </shared-views>
+  <worksheets>
+    <worksheet name='Default Rate by Age Group'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='loans (financeDB)' name='federated.1dgou951bg2xpf16hyir91c8q8c2' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1dgou951bg2xpf16hyir91c8q8c2'>
+            <column caption='Age Group' datatype='string' name='[AgeGroup]' role='dimension' type='nominal' />
+            <column caption='Default Rate' datatype='real' default-format='p0.00%' name='[Calculation_0997577310863360]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='AVG([DefaultFlag])' />
+            </column>
+            <column caption='Default Flag' datatype='integer' name='[DefaultFlag]' role='measure' type='quantitative' />
+            <column caption='Employment Type' datatype='string' name='[EmploymentType]' role='dimension' type='nominal' />
+            <column-instance column='[AgeGroup]' derivation='None' name='[none:AgeGroup:nk]' pivot='key' type='nominal' />
+            <column-instance column='[EmploymentType]' derivation='None' name='[none:EmploymentType:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_0997577310863360]' derivation='User' name='[usr:Calculation_0997577310863360:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.1dgou951bg2xpf16hyir91c8q8c2].[none:EmploymentType:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.1dgou951bg2xpf16hyir91c8q8c2].[usr:Calculation_0997577310863360:qk]</rows>
+        <cols>[federated.1dgou951bg2xpf16hyir91c8q8c2].[none:AgeGroup:nk]</cols>
+      </table>
+      <simple-id uuid='{F705AFD5-5E26-4499-B05B-7B75C742E205}' />
+    </worksheet>
+    <worksheet name='Loan Value By Purpose'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='loans (financeDB)' name='federated.1dgou951bg2xpf16hyir91c8q8c2' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1dgou951bg2xpf16hyir91c8q8c2'>
+            <column caption='Default Rate' datatype='real' default-format='p0.00%' name='[Calculation_0997577310863360]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='AVG([DefaultFlag])' />
+            </column>
+            <column caption='Default Flag' datatype='integer' name='[DefaultFlag]' role='measure' type='quantitative' />
+            <column caption='Employment Type' datatype='string' name='[EmploymentType]' role='dimension' type='nominal' />
+            <column caption='Loan Amount' datatype='integer' name='[LoanAmount]' role='measure' type='quantitative' />
+            <column caption='Loan Purpose' datatype='string' name='[LoanPurpose]' role='dimension' type='nominal' />
+            <column-instance column='[EmploymentType]' derivation='None' name='[none:EmploymentType:nk]' pivot='key' type='nominal' />
+            <column-instance column='[LoanPurpose]' derivation='None' name='[none:LoanPurpose:nk]' pivot='key' type='nominal' />
+            <column-instance column='[LoanAmount]' derivation='Sum' name='[sum:LoanAmount:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_0997577310863360]' derivation='User' name='[usr:Calculation_0997577310863360:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.1dgou951bg2xpf16hyir91c8q8c2].[none:EmploymentType:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1dgou951bg2xpf16hyir91c8q8c2].[usr:Calculation_0997577310863360:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1dgou951bg2xpf16hyir91c8q8c2].[none:LoanPurpose:nk]</rows>
+        <cols>[federated.1dgou951bg2xpf16hyir91c8q8c2].[sum:LoanAmount:qk]</cols>
+      </table>
+      <simple-id uuid='{89BFA675-EA20-4FA2-9FA6-D05A385DE350}' />
+    </worksheet>
+    <worksheet name='Risk HeatMap'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='loans (financeDB)' name='federated.1dgou951bg2xpf16hyir91c8q8c2' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1dgou951bg2xpf16hyir91c8q8c2'>
+            <column caption='Default Rate' datatype='real' default-format='p0.00%' name='[Calculation_0997577310863360]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='AVG([DefaultFlag])' />
+            </column>
+            <column caption='Credit Band' datatype='string' name='[CreditBand]' role='dimension' type='nominal' />
+            <column caption='Default Flag' datatype='integer' name='[DefaultFlag]' role='measure' type='quantitative' />
+            <column caption='Employment Type' datatype='string' name='[EmploymentType]' role='dimension' type='nominal' />
+            <column caption='LTI Band' datatype='string' name='[LTIBand]' role='dimension' type='nominal' />
+            <column-instance column='[CreditBand]' derivation='None' name='[none:CreditBand:nk]' pivot='key' type='nominal' />
+            <column-instance column='[EmploymentType]' derivation='None' name='[none:EmploymentType:nk]' pivot='key' type='nominal' />
+            <column-instance column='[LTIBand]' derivation='None' name='[none:LTIBand:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_0997577310863360]' derivation='User' name='[usr:Calculation_0997577310863360:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <manual-sort column='[federated.1dgou951bg2xpf16hyir91c8q8c2].[none:LTIBand:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;&lt;1x&quot;</bucket>
+              <bucket>&quot;1-2x&quot;</bucket>
+              <bucket>&quot;2-3x&quot;</bucket>
+              <bucket>&quot;3x+&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.1dgou951bg2xpf16hyir91c8q8c2].[none:EmploymentType:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <encodings>
+              <color column='[federated.1dgou951bg2xpf16hyir91c8q8c2].[usr:Calculation_0997577310863360:qk]' />
+              <text column='[federated.1dgou951bg2xpf16hyir91c8q8c2].[usr:Calculation_0997577310863360:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1dgou951bg2xpf16hyir91c8q8c2].[none:CreditBand:nk]</rows>
+        <cols>[federated.1dgou951bg2xpf16hyir91c8q8c2].[none:LTIBand:nk]</cols>
+      </table>
+      <simple-id uuid='{D5340E47-F877-4649-AFCE-1D11A92ADE74}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style />
+      <size sizing-mode='automatic' />
+      <datasources>
+        <datasource caption='loans (financeDB)' name='federated.1dgou951bg2xpf16hyir91c8q8c2' />
+      </datasources>
+      <datasource-dependencies datasource='federated.1dgou951bg2xpf16hyir91c8q8c2'>
+        <column caption='Employment Type' datatype='string' name='[EmploymentType]' role='dimension' type='nominal' />
+        <column-instance column='[EmploymentType]' derivation='None' name='[none:EmploymentType:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98214' id='8' param='horz' type-v2='layout-flow' w='99064' x='468' y='893'>
+            <zone h='98214' id='6' type-v2='layout-basic' w='89702' x='468' y='893'>
+              <zone h='98214' id='3' name='Default Rate by Age Group' w='40492' x='468' y='893'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='49107' id='5' name='Risk HeatMap' w='49210' x='40960' y='893'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='49107' id='10' name='Loan Value By Purpose' w='49210' x='40960' y='50000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone fixed-size='160' h='98214' id='7' is-fixed='true' param='vert' type-v2='layout-flow' w='9362' x='90170' y='893'>
+              <zone h='7255' id='9' name='Risk HeatMap' pane-specification-id='0' param='[federated.1dgou951bg2xpf16hyir91c8q8c2].[usr:Calculation_0997577310863360:qk]' type-v2='color' w='9362' x='90170' y='893'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='14174' id='11' name='Default Rate by Age Group' param='[federated.1dgou951bg2xpf16hyir91c8q8c2].[none:EmploymentType:nk]' type-v2='filter' values='database' w='9362' x='90170' y='8148'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1000' minheight='1000' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='15' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98214' id='14' param='vert' type-v2='layout-flow' w='99064' x='468' y='893'>
+                <zone h='14174' id='11' mode='checkdropdown' name='Default Rate by Age Group' param='[federated.1dgou951bg2xpf16hyir91c8q8c2].[none:EmploymentType:nk]' type-v2='filter' values='database' w='9362' x='90170' y='8148'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='98214' id='3' is-fixed='true' name='Default Rate by Age Group' w='40492' x='468' y='893'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49107' id='5' is-fixed='true' name='Risk HeatMap' w='49210' x='40960' y='893'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='7255' id='9' name='Risk HeatMap' pane-specification-id='0' param='[federated.1dgou951bg2xpf16hyir91c8q8c2].[usr:Calculation_0997577310863360:qk]' type-v2='color' w='9362' x='90170' y='893'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49107' id='10' is-fixed='true' name='Loan Value By Purpose' w='49210' x='40960' y='50000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{DA4CE6B7-C779-4FE8-B3BE-A9A402128784}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='Default Rate by Age Group'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.1dgou951bg2xpf16hyir91c8q8c2].[none:EmploymentType:nk]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1dgou951bg2xpf16hyir91c8q8c2].[none:AgeGroup:nk]</field>
+            <field>[federated.1dgou951bg2xpf16hyir91c8q8c2].[none:EmploymentType:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{716FAA57-DACB-4C83-83BF-8003DB8FF786}' />
+    </window>
+    <window class='worksheet' name='Risk HeatMap'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1dgou951bg2xpf16hyir91c8q8c2].[usr:Calculation_0997577310863360:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1dgou951bg2xpf16hyir91c8q8c2].[none:LTIBand:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{315FAB20-7C8F-4177-B56B-D7D1FE28A57D}' />
+    </window>
+    <window class='worksheet' name='Loan Value By Purpose'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1dgou951bg2xpf16hyir91c8q8c2].[usr:Calculation_0997577310863360:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1dgou951bg2xpf16hyir91c8q8c2].[none:LoanPurpose:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{D637756F-4380-4EA1-8AB8-F1547A3CE4AD}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Default Rate by Age Group'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Loan Value By Purpose' />
+        <viewpoint name='Risk HeatMap' />
+      </viewpoints>
+      <active id='11' />
+      <simple-id uuid='{C1E42EDB-F32A-4064-A8D8-BA05BFA908E0}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Dashboard 1' width='192'>
+      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
+      AAAAAElFTkSuQmCC
+    </thumbnail>
+    <thumbnail height='192' name='Default Rate by Age Group' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='179' name='Loan Value By Purpose' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='124' name='Risk HeatMap' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
